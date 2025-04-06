@@ -1,0 +1,160 @@
+/* Container */
+.todo-container {
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #F3E5F5, #E1BEE7); /* Elegant lavender tones */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    color: #4A148C; /* Deep purple */
+    box-sizing: border-box;
+}
+
+/* Title */
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #6A1B9A; /* Vibrant purple */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Input Field */
+.todo-input {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #BA68C8; /* Light purple */
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+
+.todo-input:focus {
+    border-color: #AB47BC; /* Slightly darker purple */
+    box-shadow: 0 0 8px #AB47BC;
+    outline: none;
+}
+
+/* Add Button */
+.add-button {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #CE93D8, #AB47BC); /* Pink-purple gradient */
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s ease-in-out;
+}
+
+.add-button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #AB47BC, #CE93D8);
+}
+
+/* Scrollable List */
+.todo-list {
+    list-style: none;
+    padding: 10px; /* Padding inside the scrollable area */
+    margin: 20px 0;
+    max-height: 300px; /* Set max height for scrollable list */
+    overflow-y: auto; /* Enable vertical scrolling */
+    border: 2px solid #BA68C8; /* Optional border */
+    border-radius: 10px;
+    background: #F3E5F5; /* Matching the theme */
+    box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle inset shadow */
+}
+
+/* Custom Scrollbar */
+.todo-list::-webkit-scrollbar {
+    width: 8px; /* Scrollbar width */
+}
+
+.todo-list::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #BA68C8, #AB47BC); /* Gradient for the scrollbar */
+    border-radius: 4px;
+}
+
+.todo-list::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #AB47BC, #BA68C8); /* Hover effect */
+}
+
+.todo-list::-webkit-scrollbar-track {
+    background: #EDE7F6; /* Light track background */
+    border-radius: 4px;
+}
+
+/* Todo Item */
+.todo-item {
+    padding: 15px;
+    margin: 10px 0;
+    background: linear-gradient(135deg, #EDE7F6, #D1C4E9); /* Gentle gradient */
+    color: #311B92; /* Refined purple text */
+    font-size: 16px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s, box-shadow 0.2s ease-in-out;
+}
+
+.todo-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Delete Button */
+.delete-button {
+    background: linear-gradient(135deg, #FF8A80, #FF5252); /* Bold red gradient */
+    border: none;
+    font-size: 18px;
+    color: #ffffff; /* White trash icon for contrast */
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%; /* Circular button */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 4px 12px rgba(255, 82, 82, 0.3); /* Soft glow effect */
+}
+
+.delete-button:hover {
+    transform: scale(1.2); /* Enlarged on hover */
+    box-shadow: 0 6px 16px rgba(255, 82, 82, 0.5); /* Brighter glow */
+}
+
+/* Separator */
+hr {
+    border: 1px solid #BA68C8;
+    margin: 30px 0;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .todo-container {
+        width: 95%;
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .todo-input, .add-button {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .todo-item {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .todo-list {
+        max-height: 200px; /* Adjust for smaller screens */
+    }
+}

@@ -1,31 +1,28 @@
-/* Container */
 .todo-container {
     width: 90%;
     max-width: 500px;
     margin: 20px auto;
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #F3E5F5, #E1BEE7); /* Elegant lavender tones */
+    background: linear-gradient(135deg, #F3E5F5, #E1BEE7);
     padding: 40px;
     border-radius: 20px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    color: #4A148C; /* Deep purple */
+    color: #4A148C;
     box-sizing: border-box;
 }
 
-/* Title */
 h1 {
     font-size: 28px;
     font-weight: bold;
-    color: #6A1B9A; /* Vibrant purple */
+    color: #6A1B9A;
     text-align: center;
     margin-bottom: 30px;
 }
 
-/* Input Field */
 .todo-input {
     width: 100%;
     padding: 15px;
-    border: 2px solid #BA68C8; /* Light purple */
+    border: 2px solid #BA68C8;
     border-radius: 8px;
     font-size: 16px;
     margin-bottom: 15px;
@@ -34,16 +31,15 @@ h1 {
 }
 
 .todo-input:focus {
-    border-color: #AB47BC; /* Slightly darker purple */
+    border-color: #AB47BC;
     box-shadow: 0 0 8px #AB47BC;
     outline: none;
 }
 
-/* Add Button */
 .add-button {
     width: 100%;
     padding: 15px;
-    background: linear-gradient(135deg, #CE93D8, #AB47BC); /* Pink-purple gradient */
+    background: linear-gradient(135deg, #CE93D8, #AB47BC);
     color: #ffffff;
     font-size: 16px;
     font-weight: bold;
@@ -58,44 +54,41 @@ h1 {
     background: linear-gradient(135deg, #AB47BC, #CE93D8);
 }
 
-/* Scrollable List */
 .todo-list {
     list-style: none;
-    padding: 10px; /* Padding inside the scrollable area */
+    padding: 10px;
     margin: 20px 0;
-    max-height: 300px; /* Set max height for scrollable list */
-    overflow-y: auto; /* Enable vertical scrolling */
-    border: 2px solid #BA68C8; /* Optional border */
+    max-height: 300px;
+    overflow-y: auto;
+    border: 2px solid #BA68C8;
     border-radius: 10px;
-    background: #F3E5F5; /* Matching the theme */
-    box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle inset shadow */
+    background: #F3E5F5;
+    box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Custom Scrollbar */
 .todo-list::-webkit-scrollbar {
-    width: 8px; /* Scrollbar width */
+    width: 8px;
 }
 
 .todo-list::-webkit-scrollbar-thumb {
-    background: linear-gradient(135deg, #BA68C8, #AB47BC); /* Gradient for the scrollbar */
+    background: linear-gradient(135deg, #BA68C8, #AB47BC);
     border-radius: 4px;
 }
 
 .todo-list::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(135deg, #AB47BC, #BA68C8); /* Hover effect */
+    background: linear-gradient(135deg, #AB47BC, #BA68C8);
 }
 
 .todo-list::-webkit-scrollbar-track {
-    background: #EDE7F6; /* Light track background */
+    background: #EDE7F6;
     border-radius: 4px;
 }
 
-/* Todo Item */
 .todo-item {
     padding: 15px;
     margin: 10px 0;
-    background: linear-gradient(135deg, #EDE7F6, #D1C4E9); /* Gentle gradient */
-    color: #311B92; /* Refined purple text */
+    background: linear-gradient(135deg, #EDE7F6, #D1C4E9);
+    color: #311B92;
     font-size: 16px;
     border-radius: 10px;
     display: flex;
@@ -109,31 +102,28 @@ h1 {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Delete Button */
 .delete-button {
-    background: linear-gradient(135deg, #FF8A80, #FF5252); /* Bold red gradient */
+    background: linear-gradient(135deg, #FF8A80, #FF5252);
     border: none;
     font-size: 18px;
-    color: #ffffff; /* White trash icon for contrast */
+    color: #ffffff;
     cursor: pointer;
     padding: 10px;
-    border-radius: 50%; /* Circular button */
+    border-radius: 50%;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    box-shadow: 0 4px 12px rgba(255, 82, 82, 0.3); /* Soft glow effect */
+    box-shadow: 0 4px 12px rgba(255, 82, 82, 0.3);
 }
 
 .delete-button:hover {
-    transform: scale(1.2); /* Enlarged on hover */
-    box-shadow: 0 6px 16px rgba(255, 82, 82, 0.5); /* Brighter glow */
+    transform: scale(1.2);
+    box-shadow: 0 6px 16px rgba(255, 82, 82, 0.5);
 }
 
-/* Separator */
 hr {
     border: 1px solid #BA68C8;
     margin: 30px 0;
 }
 
-/* Mobile Responsiveness */
 @media (max-width: 768px) {
     .todo-container {
         width: 95%;
@@ -155,6 +145,6 @@ hr {
     }
 
     .todo-list {
-        max-height: 200px; /* Adjust for smaller screens */
+        max-height: 200px;
     }
 }
